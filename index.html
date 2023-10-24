@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img class="vila" src="VILAGESTOCK-removebg-preview (1).png" alt="">
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="carrrr-removebg-preview.png" alt="">
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" >
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total:R$0,00</span>
+                <button onclick="limparCarrinho()">Limpar carrinho</button>
+            </div>
+        </div>
+
+    </header>
+    <main id="main">
+        <div class="conatiner">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="Espada.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Espada </h3>
+                            <p>ES<img id="ico" src="e.ico">40</p>
+                            <button onclick="addCarrinho('Espada', 40.00)">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="pao.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Pão</h3>
+                            <p>ES <img id="ico" src="e.ico"> 40</p>
+                            <button onclick="addCarrinho('Pão', 40.00)">adicionar ao carrinho </button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="papel png.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Papel </h3>
+                            <p>ES <img id="ico" src="e.ico"> 12</p>
+                            <button onclick="addCarrinho('Papel', 12.00)">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tortapng.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Torta de abobora  </h3>
+                            <p>ES <img id="ico" src="e.ico"> 20</p>
+                            <button onclick="addCarrinho('torta', 20.00)">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="trigopng.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Trigo </h3>
+                            <p>ES <img id="ico" src="e.ico"> 300</p>
+                            <button onclick="addCarrinho('trigo', 300.00)">adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="carni podi.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Carne podre </h3>
+                            <p>ES <img id="ico" src="e.ico"> 20</p>
+                            <button onclick="addCarrinho('carnipodi', 20.00)">adicionar ao carrinho</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <script src="script.js"></script>
+
+   </body>
+</html>
